@@ -1,7 +1,5 @@
 <h1 align="center"> Welcome to my Journey to Tech !</h1>
 
-![](./favicon/logo.png)
-
 My name is [ADAMU MUHAMMAD MUHAMMAD](https://www.linkedin.com/in/adamu-muhammad-muhammad-13456b190/), and I'm a computer science and software engineering student at [Gombe State University](https://gsu.edu.ng/home/) and [Alx](https://www.alxafrica.com/) respectively. I'm also the founder and community lead at [Open Source Learners](https://github.com/open-source-learners), a community dedicated to promoting open source education and collaboration.
 
 
@@ -53,6 +51,11 @@ Together, we can build a better, more open, and more inclusive tech ecosystem.
 
 [So join me](https://open-source-learners.github.io/web/) on this journey to tech and open source. Let's work together to build a better future for all!
 
+
+
+## Advice 
+
+[Advice on career](./Advice/README.md)
 
 ## Git
 
