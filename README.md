@@ -60,7 +60,7 @@ Together, we can build a better, more open, and more inclusive tech ecosystem.
 
 - [Notes](Kubernetes/README.md)
 - [Commands](Kubernetes/commands/README.md)
-- [Manifest Files](https://github.com/Pradumnasaraf/DevOps/tree/main/Kubernetes/YAML)
+- [Manifest Files]()
 
 <br>
 
@@ -70,36 +70,36 @@ Together, we can build a better, more open, and more inclusive tech ecosystem.
 
 - [Notes](Docker/README.md)
 - [Commands](Docker/commands/README.md)
-- [Compose/Stack Files](https://github.com/Pradumnasaraf/DevOps/tree/main/Docker/YAML)
-- [Dockerfile](https://github.com/Pradumnasaraf/DevOps/tree/main/Docker/Dockerfile)
+- [Compose/Stack Files]()
+- [Dockerfile]()
 
 ### page
 
 <img align="right" src="https://user-images.githubusercontent.com/51878265/211621722-c2ddc389-6e4e-4769-9dac-f18f8e71fed3.png" height="100" alt="GitHub Action"> 
 
 - [Notes](GitHub-Actions/README.md)
-- [Workflows](https://github.com/Pradumnasaraf/DevOps/tree/main/GitHub-Actions/Workflows)
+- [Workflows]()
 
 ### project
 
 <img align="right" src="https://user-images.githubusercontent.com/51878265/211621722-c2ddc389-6e4e-4769-9dac-f18f8e71fed3.png" height="100" alt="GitHub Action"> 
 
 - [Notes](GitHub-Actions/README.md)
-- [Workflows](https://github.com/Pradumnasaraf/DevOps/tree/main/GitHub-Actions/Workflows)
+- [Workflows]()
 
 ### wiki
 
 <img align="right" src="https://user-images.githubusercontent.com/51878265/211621722-c2ddc389-6e4e-4769-9dac-f18f8e71fed3.png" height="100" alt="GitHub Action"> 
 
 - [Notes](GitHub-Actions/README.md)
-- [Workflows](https://github.com/Pradumnasaraf/DevOps/tree/main/GitHub-Actions/Workflows)
+- [Workflows]()
 
 ### actions
 
 <img align="right" src="https://user-images.githubusercontent.com/51878265/211621722-c2ddc389-6e4e-4769-9dac-f18f8e71fed3.png" height="100" alt="GitHub Action"> 
 
 - [Notes](GitHub-Actions/README.md)
-- [Workflows](https://github.com/Pradumnasaraf/DevOps/tree/main/GitHub-Actions/Workflows)
+- [Workflows]()
 
 <br>
 
@@ -144,8 +144,8 @@ Together, we can build a better, more open, and more inclusive tech ecosystem.
 <img align="right" src="https://user-images.githubusercontent.com/51878265/213385507-52f03107-388c-4992-9b5e-c89de6906e37.png" height="100" alt="network"> 
 
 - [Notes](Go/README.md)
-- [Concepts](https://github.com/Pradumnasaraf/DevOps/tree/main/Go/Concepts)
-- [Practice App](https://github.com/Pradumnasaraf/DevOps/tree/main/Go/App)
+- [Concepts]()
+- [Practice App]()
 
 <br>
 
@@ -154,15 +154,14 @@ Together, we can build a better, more open, and more inclusive tech ecosystem.
 <img align="right" src="https://user-images.githubusercontent.com/51878265/200594989-b1406680-ed41-478a-84d5-7c35b287e112.png" height="100" alt="Bash"> 
 
 - [Notes](Bash-Scripting/README.md)
-- [Script](https://github.com/Pradumnasaraf/DevOps/tree/main/Bash-Scripting/Scripts)
+- [Script]()
 
 <br>
 
 ## Python
 
 <!-- ### Topic to cover
-- Ansible
-- Terraform
+
 - CI/CD
 - Advanced Networking
  -->
