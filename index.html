@@ -13,12 +13,12 @@
       name="viewport"
       content="width=device-width, initial-scale=1.0, minimum-scale=1.0"
     />
-    <link
+  <link
       rel="stylesheet"
       href="//cdn.jsdelivr.net/npm/docsify-darklight-theme@latest/dist/style.min.css"
       title="docsify-darklight-theme"
       type="text/css"
-    />
+    /> 
   </head>
   <body>
     <div id="app"></div>
@@ -27,7 +27,7 @@
         themeColor: "#03C988",
         name: "Geekink",
         repo: "AdamsGeeky/geekink",
-        ga: 'UA-XXXXX-Y',
+        ga: 'G-4MCW5NZ45Y',
         relativePath: true,
         subMaxLevel: 3,
         search: "auto",
@@ -49,15 +49,21 @@
           },
         },
       };
+      // sevice workers
+      if (typeof navigator.serviceWorker !== 'undefined') {
+       navigator.serviceWorker.register('sw.js')
+  }
     </script>
     <!-- Docsify v4 -->
-    <script src="//cdn.jsdelivr.net/npm/docsify@4" data-ga="UA-XXXXX-Y"></script>
+     <script src="//cdn.jsdelivr.net/npm/docsify@4" data-ga="G-4MCW5NZ45Y"></script> 
     <script src="//cdn.jsdelivr.net/npm/docsify-edit-on-github"></script>
+    <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/ga.min.js"></script>
     <script src="//unpkg.com/docsify/lib/plugins/search.min.js"></script>
     <script
       src="//cdn.jsdelivr.net/npm/docsify-darklight-theme@latest/dist/index.min.js"
       type="text/javascript"
-    ></script>
-    <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/ga.min.js"></script>
+    ></script> 
+
+    
   </body>
 </html>
