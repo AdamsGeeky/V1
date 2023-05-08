@@ -51,6 +51,8 @@ Together, we can build a better, more open, and more inclusive tech ecosystem.
 
 [So join me](https://open-source-learners.github.io/web/) on this journey to tech and open source. Let's work together to build a better future for all!
 
+<a href="https://github.com/AdamsGeeky"><img decoding="async" loading="lazy" width="149" height="149" src="https://github.blog/wp-content/uploads/2008/12/forkme_right_green_007200.png?resize=149%2C149" class="attachment-full size-full" alt="Fork me on GitHub" data-recalc-dims="1"></a>
+
 
 
 ## Advice 
@@ -162,6 +164,8 @@ Together, we can build a better, more open, and more inclusive tech ecosystem.
 <br>
 
 ## Python
+
+[AdamsGeeky](https://www.youtube.com/watch?v=PZtyLy_T_LU ':include :type=video width=100%')
 
 <!-- ### Topic to cover
 

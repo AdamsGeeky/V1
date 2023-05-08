@@ -24,7 +24,13 @@
     <div id="app"></div>
     <script>
       window.$docsify = {
+        homepage: 'home.md',
         coverpage: true,
+        loadNavbar: true,
+        loadNavbar: 'nav.md',
+        logo: './favicon/logo.png',
+        loadSidebar: true,
+        loadSidebar: 'summary.md',
         themeColor: "#03C988",
         name: "Geekink",
         repo: "AdamsGeeky/geekink",
@@ -32,6 +38,10 @@
         relativePath: true,
         subMaxLevel: 3,
         search: "auto",
+        search: [
+            '/',            
+            '/Git',       
+       ],
         search: {
           maxAge: 86400000,
           paths: "auto",
@@ -59,7 +69,7 @@
      <script src="//cdn.jsdelivr.net/npm/docsify@4" data-ga="G-4MCW5NZ45Y"></script> 
     <script src="//cdn.jsdelivr.net/npm/docsify-edit-on-github"></script>
     <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/ga.min.js"></script>
-    <script src="//unpkg.com/docsify/lib/plugins/search.min.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/search.min.js"></script>
     <script
       src="//cdn.jsdelivr.net/npm/docsify-darklight-theme@latest/dist/index.min.js"
       type="text/javascript"
@@ -67,6 +77,8 @@
     <!-- page -->
 <script src="//unpkg.com/docsify-pagination/dist/docsify-pagination.min.js"></script>
 
-    
-  </body>
+<!-- code  -->
+<script src="//cdn.jsdelivr.net/npm/prismjs@1/components/prism-bash.min.js"></script>
+<script src="//cdn.jsdelivr.net/npm/prismjs@1/components/prism-php.min.js"></script>
+</body>
 </html>
