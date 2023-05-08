@@ -1,4 +1,4 @@
-![logo](./favicon/logo.png)
+![logo](_media/logo.png)
 
 Sharing my journey to tech and the importance of open source is my way of paying it forward and helping the next generation of tech leaders.
 
