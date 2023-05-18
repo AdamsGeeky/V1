@@ -1,6 +1,10 @@
 import React from 'react';
 import clsx from 'clsx';
 import styles from './styles.module.css';
+import cover from '@site/static/img/geeky.jpg'
+import { FaDev,FaGithub,FaLinkedin } from "react-icons/fa";
+
+
 
 const FeatureList = [
   {
@@ -49,16 +53,40 @@ function Feature({Svg, title, description}) {
   );
 }
 
+function About(){
+  return(
+    <div className='about'>
+      <div className='left'>
+        <img src={cover} />
+        <div className='socails'>
+           <a href='#' className='icons' ><FaDev /></a>
+          <a href='#' className='icons' ><FaGithub/></a>
+          <a href='#' className='icons' ><FaLinkedin/></a>
+        </div>
+      </div>
+
+      <div className='right'>
+        <h1>About</h1>
+        <p>
+          lourem
+        </p>
+      </div>
+    </div>
+  )
+}
 export default function HomepageFeatures() {
   return (
     <section className={styles.features}>
-      <div className="container">
+      <div className="container"> 
+      <About/>          
         <div className="row">
           {FeatureList.map((props, idx) => (
             <Feature key={idx} {...props} />
           ))}
         </div>
-      </div>
+       
+       </div>
+      
     </section>
   );
 }
