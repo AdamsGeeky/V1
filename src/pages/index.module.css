@@ -11,7 +11,11 @@
 }
 
 .container{
-  height: 90vh;
+  height: 80vh;
+  background: url(../../static/img/backgroud.svg);
+  background-repeat: no-repeat;
+  background-position: cover;
+
 }
 @media screen and (max-width: 996px) {
   .heroBanner {

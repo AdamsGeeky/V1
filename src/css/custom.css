@@ -38,6 +38,25 @@
   margin-right: 16px;
   display: flex;
   text-align: center;
+  flex-wrap: wrap
+}
+.about div{
+  flex-basis: 50%;
+  height: 100vh;
+}
+.right{
+  text-align: center;
+  font-size: 1.2rem;
+}
+@media (max-width: 768px) {
+  .about div {
+    flex-basis: 100%; /* Full width for child elements on mobile screens */
+    height: auto; /* Reset the height for stacked layout */
+  }
+  .about img{
+    width: 90vw;
+    height: auto;
+  }
 }
 .socails{
   display: flex;

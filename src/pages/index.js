@@ -10,18 +10,18 @@ import styles from './index.module.css';
 function HomepageHeader() {
   const {siteConfig} = useDocusaurusContext();
   return (
-    <header className={clsx('hero hero--primary', styles.heroBanner)}>
+    <header className={clsx('hero', styles.heroBanner)}>
       <div className={styles.container}>
         <div>
-          <h1 className="hero__title">{siteConfig.title}</h1>
+          <h1 className="hero__title">🚀 Empowering Tech Enthusiasts 🚀</h1>
           <p className="hero__subtitle text--center padding-horiz--md">
-          the vast ocean of technology, inspiring students and techies to unlock their full potential. let's celebrate the beauty of knowledge sharing and the transformative power of open source.
+          Geek Ink is your gateway to unlocking the limitless potential of the tech industry. Whether you're a beginner, a seasoned developer, or a lifelong learner, this platform is designed to empower you with the skills and mindset needed for success.
           </p>
           <div className={styles.buttons}>
             <Link
-              className="button button--secondary button--lg"
+              className="button button--primary button--lg"
               to="/docs/intro">
-              Get Started
+              Explore
             </Link>
         </div>
         <span className="hero__subtitle">

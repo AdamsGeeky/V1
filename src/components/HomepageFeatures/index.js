@@ -8,32 +8,29 @@ import { FaDev,FaGithub,FaLinkedin } from "react-icons/fa";
 
 const FeatureList = [
   {
-    title: 'Easy to Use',
-    Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
+    title: '🔥 Dive Into Practical Learning',
+    Svg: require('@site/static/img/Hand.svg').default,
     description: (
       <>
-        Docusaurus was designed from the ground up to be easily installed and
-        used to get your website up and running quickly.
+ Geek Ink provides curated content, real-world examples, and interactive experiences to ensure your learning is practical and applicable. From programming basics to version control, we've got you covered.
       </>
     ),
   },
   {
-    title: 'Focus on What Matters',
-    Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
+    title: '💡 Learning & Growth',
+    Svg: require('@site/static/img/mentor.svg').default,
     description: (
       <>
-        Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go
-        ahead and move your docs into the <code>docs</code> directory.
+        Geek Ink is more than just a platform; it's a mindset. Embrace a culture of continuous learning, explore new skills, and stay ahead in a rapidly evolving tech landscape. Knowledge is your superpower!
       </>
     ),
   },
   {
-    title: 'Powered by React',
-    Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
+    title: '🌍 Accessible Education for All',
+    Svg: require('@site/static/img/Team.svg').default,
     description: (
       <>
-        Extend or customize your website layout by reusing React. Docusaurus can
-        be extended while reusing the same header and footer.
+         We believe that education should be accessible to everyone, regardless of background or circumstances. Geek Ink strives to break down barriers, provide high-quality resources, and make tech education inclusive and available to all.
       </>
     ),
   },
@@ -59,16 +56,16 @@ function About(){
       <div className='left'>
         <img src={cover} />
         <div className='socails'>
-           <a href='#' className='icons' ><FaDev /></a>
-          <a href='#' className='icons' ><FaGithub/></a>
-          <a href='#' className='icons' ><FaLinkedin/></a>
+           <a href='https://dev.to/adamusgeeky' className='icons' ><FaDev /></a>
+          <a href='https://github.com/AdamsGeeky' className='icons' ><FaGithub/></a>
+          <a href='https://www.linkedin.com/in/adamu-muhammad-muhammad-13456b190/' className='icons' ><FaLinkedin/></a>
         </div>
       </div>
 
       <div className='right'>
-        <h1>About</h1>
+        <h1>Our Story:</h1>
         <p>
-          lourem
+        Geek Ink was born from my personal passion for learning and my desire to share that passion with others. As a Computer Science student at <a href='https://gsu.edu.ng/home/'>G.S.U</a> and a Software Engineering trainee at <a href='https://www.alxafrica.com/'>ALX</a>,I realized how education can truly transform the world of technology. Inspired by this realization, I created Geek Ink as a platform that combines my love for open-source, commitment to learning, and goal of making tech education accessible to everyone.
         </p>
       </div>
     </div>
