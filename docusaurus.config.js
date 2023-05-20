@@ -60,7 +60,7 @@ const config = {
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
-      // Replace with your project's social card
+      metadata: [{name: 'keywords', content: 'Geekink, open source, geek, geeky, geekink.me, AdamsGeeky'}],
       image: 'img/cover.JPG',
       navbar: {
         logo: {
