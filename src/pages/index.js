@@ -13,9 +13,9 @@ function HomepageHeader() {
     <header className={clsx('hero', styles.heroBanner)}>
       <div className={styles.container}>
         <div>
-          <h1 className="hero__title">🚀 Empowering Tech Enthusiasts 🚀</h1>
+          <h1 className="hero__title">🚀 Unleash Your Tech Potential! 🚀</h1>
           <p className="hero__subtitle text--center padding-horiz--md">
-          Geek Ink is your gateway to unlocking the limitless potential of the tech industry. Whether you're a beginner, a seasoned developer, or a lifelong learner, this platform is designed to empower you with the skills and mindset needed for success.
+          Geekink empowers you to unlock your tech potential. With valuable advice, practical tutorials, and open-source advocacy, we're here to fuel your growth and inspire you to make a difference in the world of technology. Let's embark on this exciting journey together!
           </p>
           <div className={styles.buttons}>
             <Link
