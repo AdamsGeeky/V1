@@ -1,7 +1,7 @@
 import React from 'react';
 import clsx from 'clsx';
 import styles from './styles.module.css';
-import cover from '@site/static/img/geeky.jpg'
+import cover from '@site/static/img/cover.JPG'
 import { FaDev,FaGithub,FaLinkedin } from "react-icons/fa";
 
 
@@ -81,9 +81,7 @@ export default function HomepageFeatures() {
             <Feature key={idx} {...props} />
           ))}
         </div>
-       
-       </div>
-      
+       </div>      
     </section>
   );
 }

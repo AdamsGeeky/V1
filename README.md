@@ -1,41 +1,20 @@
-# Website
-
-This website is built using [Docusaurus 2](https://docusaurus.io/), a modern static website generator.
-
-### Installation
-
-```
-$ yarn
-```
-
-### Local Development
-
-```
-$ yarn start
-```
-
-This command starts a local development server and opens up a browser window. Most changes are reflected live without having to restart the server.
-
-### Build
-
-```
-$ yarn build
-```
-
-This command generates static content into the `build` directory and can be served using any static contents hosting service.
-
-### Deployment
-
-Using SSH:
-
-```
-$ USE_SSH=true yarn deploy
-```
-
-Not using SSH:
-
-```
-$ GIT_USER=<Your GitHub username> yarn deploy
-```
-
-If you are using GitHub pages for hosting, this command is a convenient way to build the website and push to the `gh-pages` branch.
+""
+"Mentorship is the bridge between experience and aspiration, where wisdom flows freely."
+"In the realm of knowledge, the most valuable currency is the wisdom we share with those who follow in our footsteps."
+"Mentorship is the art of passing the torch of knowledge, illuminating the path for those who seek to learn and grow."
+"The beauty of mentorship lies in its ability to turn solitary knowledge into a collective legacy."
+"When we share knowledge, we create ripples that expand far beyond our own understanding."
+"Mentorship is the conduit through which experience travels, connecting generations of learners and doers."
+"The best mentors are those who see not just the potential in others, but the responsibility to nurture it."
+"In the garden of wisdom, mentorship is the act of planting seeds and nurturing them into blooming minds."
+"Mentorship isn't a one-way street; it's a junction where knowledge flows freely, enriching both the giver and the receiver."
+"A mentor's legacy isn't measured by personal success alone, but by the successes they enable in others."
+"Mentorship isn't just about transferring knowledge; it's about fostering a mindset of continuous learning and growth."
+"The true value of knowledge is unlocked when it is shared with a receptive heart and an eager mind."
+"Mentorship is the compass that guides seekers of knowledge through the uncharted territories of understanding."
+"The act of mentorship is a testament to the belief that our collective potential is greater than our individual limits."
+"As mentors, we hold the power to change lives by enabling others to stand on our shoulders and reach higher than we ever could."
+"In the realm of mentorship, generosity isn't just about giving knowledge; it's about empowering others to create their own paths."
+"Mentorship is the echo of wisdom reverberating through time, shaping the future while honoring the past."
+"Sharing knowledge is the gift that keeps on giving, and mentorship is the vehicle that carries this gift forward."
+"Mentorship isn't a transaction; it's a transformative journey where mentor and mentee both emerge wiser and stronger."

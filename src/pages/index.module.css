@@ -12,14 +12,28 @@
 
 .container{
   height: 80vh;
-  background: url(../../static/img/backgroud.svg);
+  width: 100vw;
+  background: url(/img/logo.png);
   background-repeat: no-repeat;
   background-position: cover;
-
+}
+.typer{
+  display: block;
+  padding-top: 30% 
 }
 @media screen and (max-width: 996px) {
   .heroBanner {
     padding: 2rem;
+  }
+  .container{
+  height: 40vh;
+  background: url(/img/logo.png);
+  background-size: 350px;
+  background-repeat: no-repeat; 
+  }
+  .typer{
+    display: block;
+    padding-top: 50% 
   }
 }
 

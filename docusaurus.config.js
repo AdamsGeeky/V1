@@ -72,7 +72,7 @@ const config = {
             type: 'docSidebar',
             sidebarId: 'tutorialSidebar',
             position: 'left',
-            label: 'Tutorial',
+            label: 'mentorship',
           },
           {
             href: 'https://github.com/AdamsGeeky',
@@ -88,7 +88,7 @@ const config = {
             title: 'Docs',
             items: [
               {
-                label: 'Tutorial',
+                label: 'Mentorship',
                 to: '/docs/intro',
               },
             ],
@@ -97,11 +97,11 @@ const config = {
             title: 'Community',
             items: [
               {
-                label: 'Stack Overflow',
+                label: 'Github',
                 href: 'https://stackoverflow.com/questions/tagged/docusaurus',
               },
               {
-                label: 'Discord',
+                label: 'Linkdin',
                 href: 'https://discordapp.com/invite/docusaurus',
               },
               {
@@ -120,7 +120,7 @@ const config = {
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} Geek ink.Built with Docusaurus.`,
+        copyright: `Copyright © ${new Date().getFullYear()} Geek ink.`,
       },
       prism: {
         theme: lightCodeTheme,
