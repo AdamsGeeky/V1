@@ -1,4 +1,4 @@
-import { Chicago } from 'react-chicago';
+// import { Chicago } from 'react-chicago';
 import React from 'react';
 import clsx from 'clsx';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
@@ -13,13 +13,13 @@ function HomepageHeader() {
     <header className={clsx('hero', styles.heroBanner)}>
       <div className={styles.container}>
       <span className={styles.typer}>
-        <Chicago
+        {/* <Chicago
               text="Knowledge shared is knowledge multiplied; mentorship is the spark that ignites this multiplication."
               color="#2e8555"
               interval="100"
               cursorColor="tomato"
               cursorStyle="default" 
-              />
+              /> */}
         </span>
         </div>
     </header>
