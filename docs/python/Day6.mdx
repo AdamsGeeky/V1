@@ -1,0 +1,120 @@
+---
+sidebar_position: 7
+---
+
+# Functions and Creativity
+
+
+explore modular programming concepts in Python with some code examples.
+
+# Module Design:
+
+Suppose you're working on a simple project that involves handling user authentication and generating secure tokens. You can break down this project into two modules: one for authentication and one for token generation.
+
+auth_module.py:
+
+```python
+def authenticate(username, password):
+    # Authentication logic
+    if username == "user" and password == "pass":
+        return True
+    return False
+```
+
+token_module.py:
+
+```python
+import random
+import string
+
+def generate_token(length=16):
+    characters = string.ascii_letters + string.digits
+    token = ''.join(random.choice(characters) for _ in range(length))
+    return token
+```
+
+2. Dependency Management:
+
+Let's say the token generation module depends on the authentication module. Here's how you can use the auth_module in the token_module:
+
+token_module.py:
+
+```python
+import auth_module
+
+def generate_token_if_authenticated(username, password, length=16):
+    if auth_module.authenticate(username, password):
+        token = generate_token(length)
+        return token
+    else:
+        return None
+```
+3. Encapsulation:
+
+Ensure that your modules encapsulate their internal details. Only expose what's necessary. For instance, users of the auth_module should only interact with the authenticate function:
+
+auth_module.py:
+
+```python
+def authenticate(username, password):
+    # Authentication logic
+    if username == "user" and password == "pass":
+        return True
+    return False
+```
+# Internal function not exposed to users
+```py
+def _internal_helper():
+    pass
+4. Code Organization:
+
+Organize your project structure to reflect the modular design:
+
+```css
+project/
+│
+├── auth_module.py
+├── token_module.py
+└── main.py
+```
+main.py:
+
+```python
+import auth_module
+import token_module
+
+def main():
+    username = input("Username: ")
+    password = input("Password: ")
+
+    if auth_module.authenticate(username, password):
+        token = token_module.generate_token()
+        print(f"Token: {token}")
+    else:
+        print("Authentication failed.")
+
+if __name__ == "__main__":
+    main()
+```
+
+5. Testing and Validation:
+
+Write unit tests to ensure each module functions correctly. Here's a basic example using Python's built-in unittest framework:
+
+test_auth_module.py:
+
+```python
+
+import unittest
+import auth_module
+
+class TestAuthModule(unittest.TestCase):
+    def test_authentication_success(self):
+        self.assertTrue(auth_module.authenticate("user", "pass"))
+
+    def test_authentication_failure(self):
+        self.assertFalse(auth_module.authenticate("user", "wrongpass"))
+
+if __name__ == "__main__":
+    unittest.main()
+These examples demonstrate how you can apply modular programming concepts in Python. By breaking down your project into modular components with clear interfaces and encapsulation, you make your codebase more manageable, scalable, and collaborative.
