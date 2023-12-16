@@ -140,7 +140,6 @@ const config = {
       // Replace with your project's social card
       image: 'img/docusaurus-social-card.jpg',
       navbar: {
-        title: 'Geek ink',
         logo: {
           alt: 'Geek ink',
           src: 'img/logo.png',
