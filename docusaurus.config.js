@@ -1,11 +1,16 @@
-const lightCodeTheme = require('prism-react-renderer/themes/github');
-const darkCodeTheme = require('prism-react-renderer/themes/dracula');
+// @ts-check
+// `@type` JSDoc annotations allow editor autocompletion and type checking
+// (when paired with `@ts-check`).
+// There are various equivalent ways to declare your Docusaurus config.
+// See: https://docusaurus.io/docs/api/docusaurus-config
+
+import {themes as prismThemes} from 'prism-react-renderer';
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'Geek ink',
-  tagline: 'inking.....',
-  favicon: 'img/favicon/favicon.ico',
+  tagline: 'knowledge share is multiply',
+  favicon: 'img/favicon.ico',
 
   // Set the production url of your site here
   url: 'https://geekink.me',
@@ -14,31 +19,102 @@ const config = {
   baseUrl: '/',
 
   // GitHub pages deployment config.
+  // If you aren't using GitHub pages, you don't need these.
   organizationName: 'AdamsGeeky', // Usually your GitHub org/user name.
-  projectName: 'Adams', // Usually your repo name.
+  projectName: 'Geekink', // Usually your repo name.
 
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
 
-  // Even if you don't use internalization, you can use this field to set useful
-  // metadata like html lang. For example, if your site is Chinese, you may want
-  // to replace "en" with "zh-Hans".
+  // Even if you don't use internationalization, you can use this field to set
+  // useful metadata like html lang. For example, if your site is Chinese, you
+  // may want to replace "en" with "zh-Hans".
   i18n: {
     defaultLocale: 'en',
     locales: ['en'],
   },
 
+  plugins: [
+    //plugin progressive web app
+    [
+      '@docusaurus/plugin-pwa',
+      {
+        debug: true,
+        offlineModeActivationStrategies: [
+          'appInstalled',
+          'standalone',
+          'queryString',
+        ],
+        pwaHead: [
+          {
+            tagName: 'link',
+            rel: 'icon',
+            href: '/img/favicon/logo.png',
+          },
+          {
+            tagName: 'link',
+            rel: 'manifest',
+            href: '/static/manifest.json', 
+          },
+          {
+            tagName: 'meta',
+            name: 'theme-color',
+            content: 'rgb(37, 194, 160)',
+          },
+          {
+            tagName: 'meta',
+            name: 'theme-color',
+            content: 'rgb(37, 194, 160)',
+          },
+          {
+            tagName: 'meta',
+            name: 'apple-mobile-web-app-capable',
+            content: 'yes',
+          },
+          {
+            tagName: 'meta',
+            name: 'apple-mobile-web-app-status-bar-style',
+            content: '#000',
+          },
+          {
+            tagName: 'link',
+            rel: 'apple-touch-icon',
+            href: '/img/favicon/logo.png',
+          },
+          {
+            tagName: 'link',
+            rel: 'mask-icon',
+            href: '/img/logo.svg',
+            color: 'rgb(37, 194, 160)',
+          },
+          {
+            tagName: 'meta',
+            name: 'msapplication-TileImage',
+            content: '/img/favicon/logo.png',
+          },
+          {
+            tagName: 'meta',
+            name: 'msapplication-TileColor',
+            content: '#000',
+          },
+        ],
+      },
+    ],
+  ],
+    
+// plugins end here
   presets: [
     [
       'classic',
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
+        // analytics
         gtag: {
           trackingID: 'G-4MCW5NZ45Y',
           anonymizeIP: true,
         },
         docs: {
-          sidebarPath: require.resolve('./sidebars.js'),
+          sidebarPath: './sidebars.js',
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
@@ -49,22 +125,24 @@ const config = {
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/AdamsGeeky'
+            'https://github.com/AdamsGeeky',
         },
         theme: {
-          customCss: require.resolve('./src/css/custom.css'),
-        },      }),
+          customCss: './src/css/custom.css',
+        },
+      }),
     ],
   ],
 
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
-      metadata: [{name: 'keywords', content: 'Geekink, open source, geek, geeky, geekink.me, AdamsGeeky'}],
-      image: 'img/cover.JPG',
+      // Replace with your project's social card
+      image: 'img/docusaurus-social-card.jpg',
       navbar: {
+        title: 'Geek ink',
         logo: {
-          alt: 'Logo',
+          alt: 'Geek ink',
           src: 'img/logo.png',
         },
         items: [
@@ -72,8 +150,9 @@ const config = {
             type: 'docSidebar',
             sidebarId: 'tutorialSidebar',
             position: 'left',
-            label: 'mentorship',
+            label: 'Resources',
           },
+          {to: '/blog', label: 'Blog', position: 'left'},
           {
             href: 'https://github.com/AdamsGeeky',
             label: 'GitHub',
@@ -88,25 +167,25 @@ const config = {
             title: 'Docs',
             items: [
               {
-                label: 'Mentorship',
+                label: 'Tutorial',
                 to: '/docs/intro',
               },
             ],
           },
           {
-            title: 'Community',
+            title: 'Connect with Geeky',
             items: [
               {
-                label: 'Github',
-                href: 'https://stackoverflow.com/questions/tagged/docusaurus',
+                label: 'WhatsApp',
+                href: 'https://wa.me/2348133556494',
               },
               {
-                label: 'Linkdin',
-                href: 'https://discordapp.com/invite/docusaurus',
+                label: 'protfolio',
+                href: 'https://portfolio-adamsgeeky.vercel.app/',
               },
               {
-                label: 'Twitter',
-                href: 'https://twitter.com/AdamsGeeky',
+                label: 'GitHub',
+                href: 'https://github.com/AdamsGeeky',
               },
             ],
           },
@@ -114,19 +193,23 @@ const config = {
             title: 'More',
             items: [
               {
+                label: 'Blog',
+                to: '/blog',
+              },
+              {
                 label: 'GitHub',
                 href: 'https://github.com/AdamsGeeky',
               },
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} Geek ink.`,
+        copyright: `Copyright © ${new Date().getFullYear()} AdamsGeeky.`,
       },
       prism: {
-        theme: lightCodeTheme,
-        darkTheme: darkCodeTheme,
+        theme: prismThemes.github,
+        darkTheme: prismThemes.dracula,
       },
     }),
 };
 
-module.exports = config;
+export default config;
