@@ -12,11 +12,11 @@ function HomepageHeader() {
   return (
     <header className={clsx('hero hero--primary', styles.heroBanner)}>
         <div class="container">
-          <h1 class="hero__title">{siteConfig.title}</h1>
+          {/* <h1 class="hero__title">{siteConfig.title}</h1> */}
           <p class="hero__subtitle">{siteConfig.tagline}</p>
-          <div>
+          {/* <div>
             <button class="button button--secondary button--lg">Get Started</button>
-          </div>
+          </div> */}
         </div>
     </header>
   );

@@ -132,14 +132,13 @@ const config = {
           editUrl:
             'https://github.com/AdamsGeeky',
         },
-        blog: false, 
-        // {
-        //   showReadingTime: true,
-        //   // Please change this to your repo.
-        //   // Remove this to remove the "edit this page" links.
-        //   editUrl:
-        //     'https://github.com/AdamsGeeky',
-        // },
+        blog: {
+          showReadingTime: true,
+          // Please change this to your repo.
+          // Remove this to remove the "edit this page" links.
+          editUrl:
+            'https://github.com/AdamsGeeky',
+        },
         theme: {
           customCss: './src/css/custom.css',
         },
@@ -174,7 +173,7 @@ const config = {
             label: 'Resources',
           },
           {
-            href: 'https://geekink.hashnode.dev/?source=top_nav_blog_home',
+            to: '/blog',
              label: 'Blog',
              position: 'left'
             
