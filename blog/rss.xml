@@ -1,21 +1,92 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0">
+<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/">
     <channel>
         <title>Geek ink Blog</title>
         <link>https://geekink.me/blog</link>
         <description>Geek ink Blog</description>
-        <lastBuildDate>Thu, 26 Aug 2021 00:00:00 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 20 Dec 2023 09:43:15 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
         <item>
-            <title><![CDATA[Welcome]]></title>
+            <title><![CDATA[Who is An Engineer]]></title>
             <link>https://geekink.me/blog/welcome</link>
             <guid>https://geekink.me/blog/welcome</guid>
-            <pubDate>Thu, 26 Aug 2021 00:00:00 GMT</pubDate>
-            <category>facebook</category>
-            <category>hello</category>
-            <category>docusaurus</category>
+            <pubDate>Wed, 20 Dec 2023 09:43:15 GMT</pubDate>
+            <description><![CDATA[An Engineer is someone who went to know how and why things work, beside been naturally curious, An Engineer A Person who Designs and Builds things to solve a specific problems]]></description>
+            <content:encoded><![CDATA[<p><img loading="lazy" src="https://geekink.me/assets/images/engineer-2f4842549e7ce1ddbcb5eef193ea26db.png" width="440" height="545" class="img_ev3q"></p>
+<p>An <strong>Engineer</strong> is someone who went to know <strong>how</strong> and <strong>why</strong> things work, beside been naturally curious, An <strong>Engineer</strong> A Person who Designs and Builds things to solve a specific problems</p>
+<ol>
+<li><strong>what</strong> is the problem that needs to be solved ?</li>
+<li><strong>who</strong> has the problem that needs to be solved ?</li>
+<li><strong>why</strong> is problem this important to solved ?</li>
+</ol>
+<h1>Software Engineers</h1>
+<p>they design and Create computer system and application to solve <strong>real world problems</strong></p>
+<h1>Software Engineering</h1>
+<p>is the branch of computer science that deals with the design, developments,testing, and maintenance of software application.
+Software Engineers apply engineering principal and knowledge of computer programming language to build a software solution for end users</p>
+<h1>there Tasks</h1>
+<ul>
+<li>Evaluating and testing new software programs</li>
+<li>optimizing software for speed and scalability</li>
+<li>writing and testing code</li>
+<li>consulting with client, Engineers,Security specialist and other stakeholders</li>
+<li>presenting new features to internal customers</li>
+</ul>
+<h1>General classification of software Engineers</h1>
+<ol>
+<li>System Developer</li>
+<li>Application Developer</li>
+</ol>
+<h1>System Developer Task</h1>
+<ul>
+<li>Ensuring that different types of software communicate with each other on one platform</li>
+<li>Maintaining Documentation of information technology system</li>
+<li>updating to new technologies as needed</li>
+<li>collaborating with development teams: senior system architects, and Data science professional</li>
+</ul>
+<h1>Application Developer Task</h1>
+<ul>
+<li>Developing application for Ios,Android,Windows or other Os</li>
+<li>conduction An analysis of requirement and tweaking software as needed</li>
+<li>Releasing software updates</li>
+<li>working with Graphic designers, customers services, staff,project manager, and other customer facing departments</li>
+</ul>
+<h1>Skills require as Software Engineers</h1>
+<p>to achieve all the above mention task as software Engineer to Deliver as secure reliable scalable software
+you most have a strong <strong>technical skills(hard skills)</strong> of computer science, And not only that you most also have <strong>soft skills</strong> that would enable you to interact with both Development team and end-users to get feedback and build the software that solve actual intent problem</p>
+<ol>
+<li>
+<h1>hard Skills</h1>
+<!-- -->you need a strong knowledge of computer science that would enable you to build:<!-- -->
+<ul>
+<li>server</li>
+<li>marketplace</li>
+<li>blockchain</li>
+<li>website</li>
+<li>configure a chat bot e.t.c
+all these would not be possible without strong hard skills of computer science such as:</li>
+</ul>
+</li>
+</ol>
+<ul>
+<li>programming</li>
+<li>version control</li>
+<li>object Oriented programming</li>
+<li>Data Structure and Algorithms</li>
+<li>Database architecture</li>
+<li>operating system</li>
+<li>cloud computing</li>
+<li>Agile and Scrum project management</li>
+<li>Test and Debugging</li>
+<li>Attention to details</li>
+</ul>
+<h1>Soft skills</h1>
+<p><strong>Soft skills</strong> are skills applicable to all professions.Skills like communication, collaboration, adaptability, and problem-solving – commonly called “soft” skills – are now so essential to success in IT, The ability to think creatively and solve problems by working with others is really important,</p>]]></content:encoded>
+            <category>linux</category>
+            <category>software</category>
+            <category>Engineering</category>
         </item>
     </channel>
 </rss>

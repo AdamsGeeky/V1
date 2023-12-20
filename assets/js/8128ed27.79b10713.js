@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkgeekink=self.webpackChunkgeekink||[]).push([[8404],{6089:e=>{e.exports=JSON.parse('{"label":"software","permalink":"/blog/tags/software","allTagsPath":"/blog/tags","count":1,"unlisted":false}')}}]);
