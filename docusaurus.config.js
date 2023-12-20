@@ -160,6 +160,17 @@ const config = {
     ({
       // Replace with your project's social card
       image: 'img/docusaurus-social-card.jpg',
+      // Announcement  
+      announcementBar: {
+        id: 'announcementBar-1', // Increment on change
+        isCloseable: false,
+        content: 
+         'Join C Programming Bootcamp Today ! <a target="_blank" rel="noopener noreferrer" href="https://forms.gle/KP13Ym7bWRnDeNPx7">Register here</a>',
+         backgroundColor: 'orange',
+        //  #4fddbf ,#fafbfc
+         textColor: 'black',
+        //  `⭐️️⭐️️⭐️️⭐️️⭐️️`,
+      },
       navbar: {
         logo: {
           alt: 'Geek ink',
