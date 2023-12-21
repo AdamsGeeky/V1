@@ -129,15 +129,15 @@ const config = {
           sidebarPath: './sidebars.js',
           remarkPlugins: [remarkMath],
           rehypePlugins: [rehypeKatex],
-          editUrl:
-            'https://github.com/AdamsGeeky',
+          // editUrl:
+          //   'https://github.om/AdamsGeeky',
         },
         blog: {
           showReadingTime: true,
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/AdamsGeeky',
+          // editUrl:
+          //   'https://github.com/AdamsGeeky',
         },
         theme: {
           customCss: './src/css/custom.css',
@@ -159,13 +159,13 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       // Replace with your project's social card
-      image: 'img/docusaurus-social-card.jpg',
+      image: 'img/logo.png',
       // Announcement  
       announcementBar: {
         id: 'announcementBar-1', // Increment on change
         isCloseable: false,
         content: 
-         'Join C Programming Bootcamp Today ! <a target="_blank" rel="noopener noreferrer" href="https://forms.gle/KP13Ym7bWRnDeNPx7">Register here</a>',
+         'Join C Programming Bootcamp Today ! <a target="_blank" rel="noopener noreferrer" href="https://forms.gle/YUX3ma7jDNz6Sjyf9">Register here</a>',
          backgroundColor: 'orange',
         //  #4fddbf ,#fafbfc
          textColor: 'black',
@@ -181,7 +181,7 @@ const config = {
             type: 'docSidebar',
             sidebarId: 'tutorialSidebar',
             position: 'left',
-            label: 'Resources',
+            label: 'Contents',
           },
           {
             to: '/blog',
@@ -203,7 +203,7 @@ const config = {
             title: 'Docs',
             items: [
               {
-                label: 'Tutorial',
+                label: 'Contents',
                 to: '/docs/intro',
               },
             ],
