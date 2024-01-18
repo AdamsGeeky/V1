@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://geekink.me/blog</id>
     <title>Geek ink Blog</title>
-    <updated>2024-01-18T12:47:05.000Z</updated>
+    <updated>2024-01-18T16:35:57.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://geekink.me/blog"/>
     <subtitle>Geek ink Blog</subtitle>
@@ -11,7 +11,7 @@
         <title type="html"><![CDATA[Who is An Engineer]]></title>
         <id>https://geekink.me/blog/welcome</id>
         <link href="https://geekink.me/blog/welcome"/>
-        <updated>2024-01-18T12:47:05.000Z</updated>
+        <updated>2024-01-18T16:35:57.000Z</updated>
         <summary type="html"><![CDATA[An Engineer is someone who went to know how and why things work, beside been naturally curious, An Engineer A Person who Designs and Builds things to solve a specific problems]]></summary>
         <content type="html"><![CDATA[<p><img loading="lazy" src="https://geekink.me/assets/images/engineer-2f4842549e7ce1ddbcb5eef193ea26db.png" width="440" height="545" class="img_ev3q"></p>
 <p>An <strong>Engineer</strong> is someone who went to know <strong>how</strong> and <strong>why</strong> things work, beside been naturally curious, An <strong>Engineer</strong> A Person who Designs and Builds things to solve a specific problems</p>
