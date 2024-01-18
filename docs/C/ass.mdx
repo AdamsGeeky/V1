@@ -60,49 +60,72 @@ int main() {
 ```c
 #include <stdio.h>
 
+double calculateGradePoints(double grade) // function protype
 int main() {
-    double num1, num2, result;
-    char operator;
+    int numCourses;
+    printf("Enter the number of courses: ");
+    scanf("%d", &numCourses);
 
-    // Get user input
-    printf("Enter first number: ");
-    scanf("%lf", &num1);
-
-    printf("Enter operator (+, -, *, /): ");
-    scanf(" %c", &operator);  // Note the space before %c to consume any whitespace characters
-
-    printf("Enter second number: ");
-    scanf("%lf", &num2);
-
-    // Perform arithmetic operations
-    switch (operator) {
-        case '+':
-            result = num1 + num2;
-            break;
-        case '-':
-            result = num1 - num2;
-            break;
-        case '*':
-            result = num1 * num2;
-            break;
-        case '/':
-            if (num2 != 0) {
-                result = num1 / num2;
-            } else {
-                printf("Error: Division by zero is not allowed.\n");
-                return 1;  // Exit with an error code
-            }
-            break;
-        default:
-            printf("Error: Invalid operator.\n");
-            return 1;  // Exit with an error code
+    // Ensure a valid number of courses is entered
+    if (numCourses <= 0) {
+        printf("Error: Please enter a valid number of courses.\n");
+        return 1;  // Exit with an error code
     }
 
-    // Display the result
-    printf("Result: %.2lf %c %.2lf = %.2lf\n", num1, operator, num2, result);
+    double totalCredits = 0.0;
+    double totalGradePoints = 0.0;
+
+    for (int i = 1; i <= numCourses; ++i) {
+        double credits, grade;
+        printf("\nEnter details for Course %d:\n", i);
+
+        // Get user input for course credits
+        printf("Enter credits for Course %d: ", i);
+        scanf("%lf", &credits);
+
+        // Get user input for course grade
+        printf("Enter grade for Course %d: ", i);
+        scanf("%lf", &grade);
+
+        // Validate the grade entered
+        if (grade < 0 || grade > 100) {
+            printf("Error: Please enter a valid grade between 0 and 100.\n");
+            return 1;  // Exit with an error code
+        }
+
+        // Calculate grade points based on the provided scale
+        double gradePoints = calculateGradePoints(grade);
+
+        // Update total credits and grade points
+        totalCredits += credits;
+        totalGradePoints += credits * gradePoints;
+    }
+
+    // Calculate GPA
+    double gpa = totalGradePoints / totalCredits;
+
+    // Display the GPA
+    printf("\nYour GPA is: %.2lf\n", gpa);
 
     return 0;  // Exit successfully
 }
+// function defination
+double calculateGradePoints(double grade) {
+    if (grade >= 70) {
+        return 5.0;
+    } else if (grade >= 60) {
+        return 4.0;
+    } else if (grade >= 50) {
+        return 3.0;
+    } else if (grade >= 45) {
+        return 2.0;
+    } else if (grade >= 40) {
+        return 1.0;
+    } else {
+        return 0.0;
+    }
+}
+
 ```
 
 ## project 3
