@@ -6,131 +6,78 @@ sidebar_position: 4
 
 ## Algorithm
 
-- Get User Input:
-Display a menu for temperature conversion options.
-Prompt the user to choose between Celsius to Fahrenheit (1) or Fahrenheit to Celsius (2).
+1. Start
 
-Read the user's choice and store it in the variable choice.
-Prompt the user to enter the temperature for conversion.
-Read the user input for temperature and store it in the variable temperature.
+2. Input choice
+   a. Display "Choose conversion:"
+   b. Display "1. Celsius to Fahrenheit"
+   c. Display "2. Fahrenheit to Celsius"
+   d. Display "Enter choice (1 or 2): "
+   e. Read choice from the user
 
-- Perform Temperature Conversion:
-Use a switch statement to check the user's choice and perform the corresponding temperature conversion.
+3. Input temperature
+   a. Display "Enter temperature: "
+   b. Read temperature from the user
 
-If the choice is 1, call the celsiusToFahrenheit function and display the result.
+4. Switch on choice
+   - Case 1:
+      a. Display "X Celsius is equal to Y Fahrenheit" where X is the entered temperature and Y is the result of celsiusToFahrenheit function with the entered temperature
+      b. Break
+   - Case 2:
+      a. Display "X Fahrenheit is equal to Y Celsius" where X is the entered temperature and Y is the result of fahrenheitToCelsius function with the entered temperature
+      b. Break
+   - Default:
+      a. Display "Error: Invalid choice. Please enter 1 or 2."
+      b. Return 1 (Exit with an error code)
+      c. Break
+5. End
 
-If the choice is 2, call the fahrenheitToCelsius function and display the result.
-
-If the choice is neither 1 nor 2, display an error message and exit the program with an error code.
-
-- Display Result:
-Display the result of the temperature conversion with two decimal places.
-
-- Exit Successfully:
-Return 0 to indicate successful program execution.
-
-## Program Flow:
-
-- User Interaction:
-User is presented with a menu for temperature conversion options.
-
-User is prompted to choose between Celsius to Fahrenheit (1) or Fahrenheit to Celsius (2).
-
-User enters the choice.
-User is prompted to enter the temperature for conversion.
-User enters the temperature.
-
-- Temperature Conversion:
-The program uses a switch statement to identify the user's choice.
-
-If the choice is 1, the program calls the celsiusToFahrenheit function, passing the entered temperature, and displays the result.
-
-If the choice is 2, the program calls the fahrenheitToCelsius function, passing the entered temperature, and displays the result.
-
-If the choice is neither 1 nor 2, an error message is displayed, and the program exits with an error code.
-
-- Display Result:
-The program displays the result of the temperature conversion with two decimal places.
-
-- Exit Successfully:
-The program exits with a return code of 0, indicating successful execution.
-
-
-import Tabs from '@theme/Tabs';
-import TabItem from '@theme/TabItem';
-
-<Tabs>
-<TabItem value="version1" label="version 1">
-
-```c
-function helloWorld() {
-  console.log('Hello, world!');
-}
-```
-
-</TabItem>
-<TabItem value="version2" label="version 2">
 
 ```c
 #include <stdio.h>
 
+//function prototype
+double celsiusToFahrenheit(double celsius);
+double fahrenheitToCelsius(double fahrenheit);
+
 int main() {
-    double num1, num2, result;
-    char operator;
+    int choice;
+    double temperature;
 
-    // Get user input
-    printf("Enter first number: ");
-    scanf("%lf", &num1);
+    // Get user's choice
+    printf("Choose conversion:\n");
+    printf("1. Celsius to Fahrenheit\n");
+    printf("2. Fahrenheit to Celsius\n");
+    printf("Enter choice (1 or 2): ");
+    scanf("%d", &choice);
 
-    printf("Enter operator (+, -, *, /): ");
-    scanf(" %c", &operator);  // Note the space before %c to consume any whitespace characters
+    // Get temperature from user
+    printf("Enter temperature: ");
+    scanf("%lf", &temperature);
 
-    printf("Enter second number: ");
-    scanf("%lf", &num2);
-
-    // Perform arithmetic operations
-    switch (operator) {
-        case '+':
-            result = num1 + num2;
+    // Perform conversion based on user's choice
+    switch (choice) {
+        case 1:
+            printf("%.2lf Celsius is equal to %.2lf Fahrenheit\n", temperature, celsiusToFahrenheit(temperature));
             break;
-        case '-':
-            result = num1 - num2;
-            break;
-        case '*':
-            result = num1 * num2;
-            break;
-        case '/':
-            if (num2 != 0) {
-                result = num1 / num2;
-            } else {
-                printf("Error: Division by zero is not allowed.\n");
-                return 1;  // Exit with an error code
-            }
+        case 2:
+            printf("%.2lf Fahrenheit is equal to %.2lf Celsius\n", temperature, fahrenheitToCelsius(temperature));
             break;
         default:
-            printf("Error: Invalid operator.\n");
+            printf("Error: Invalid choice. Please enter 1 or 2.\n");
             return 1;  // Exit with an error code
     }
-
-    // Display the result
-    printf("Result: %.2lf %c %.2lf = %.2lf\n", num1, operator, num2, result);
 
     return 0;  // Exit successfully
 }
 
+// Function to convert Celsius to Fahrenheit
+double celsiusToFahrenheit(double celsius) {
+    return (celsius * 9 / 5) + 32;
+}
 
-```
-
-</TabItem>
-<TabItem value="version3" label="version 3">
-
-```checks
-class HelloWorld {
-  public static void main(String args[]) {
-    System.out.println("Hello, World");
-  }
+// Function to convert Fahrenheit to Celsius
+double fahrenheitToCelsius(double fahrenheit) {
+    return (fahrenheit - 32) * 5 / 9;
 }
 ```
-
-</TabItem>
-</Tabs>

@@ -4,84 +4,113 @@ sidebar_position: 3
 
 # project 2
 
-## Algorithm
+# Algorithm
 
-- step 1 Prompt User for Number of Courses:
-Display a prompt asking the user to enter the number of courses.
-Read the user input and store it in the variable numCourses.
+1. Get User Input:
+    - Display a prompt asking the user to enter the number of courses.
+    - Read the user input and store it in the variable numCourses.
 
-- step 2 Validate Number of Courses:
+2. Validate Number of Courses:
 
-Check if numCourses is less than or equal to 0.
+    - Check if numCourses is less than or equal to 0.
+    - If true, display an error message and exit the program with an error code.
 
-If true, display an error message and exit the program with an error code.
+3. Initialize Variables:
+    - Initialize totalCredits and totalGradePoints to 0.0.
+        - Loop for Each Course:
+            - Use a for loop to iterate from 1 to numCourses.
+            - Inside the loop:
+                - Display a prompt for course details (course number).
+                - Read and store user input for course credits in the variable credits.
+                - Read and store user input for course grade in the variable grade.
 
-- step 3 Initialize Variables:
-Initialize totalCredits and totalGradePoints to 0.0.
+4. Validate Grade:
 
-- step 4  Loop for Each Course:
-Use a for loop to iterate from 1 to numCourses.
+    - Check if grade is outside the valid range of 0 to 100.
+    - If true, display an error message and exit the program with an error code.
 
-- step 5 Inside the loop:
+5. Calculate Grade Points:
+    - Call the calculateGradePoints function, passing the entered grade.
+    - Store the result in the variable gradePoints.
 
-Display a prompt for course details (course number).
-Read and store user input for course credits in the variable credits.
-Read and store user input for course grade in the variable grade.
+6. Update Total Credits and Grade Points:
+    - Add credits to totalCredits.
+    - Add the product of credits and gradePoints to totalGradePoints.
 
-- step 6 Validate Grade:
-Check if grade is outside the valid range of 0 to 4 (on a 4.0 scale).
-If true, display an error message and exit the program with an error code.
+7. Calculate GPA:
+    - Calculate the GPA by dividing totalGradePoints by totalCredits. Store the result in the variable gpa.
 
-- step 7 Update Total Credits and Grade Points:
-Add credits to totalCredits.
-Add the product of credits and grade to totalGradePoints.
+8. Display GPA:
+    - Display the calculated GPA with two decimal places.
 
-- step 8  Calculate GPA:
-Calculate the GPA by dividing totalGradePoints by totalCredits. Store the result in the variable gpa.
+10. Exit Successfully:
+    - Return 0 to indicate successful program execution.
 
-- step 9 Display GPA:
-Display the calculated GPA with two decimal places.
+```C
+#include <stdio.h>
 
-- step 10 Exit Successfully:
-Return 0 to indicate successful program execution.
+double calculateGradePoints(double grade) {
+    if (grade >= 70) {
+        return 5.0;
+    } else if (grade >= 60) {
+        return 4.0;
+    } else if (grade >= 50) {
+        return 3.0;
+    } else if (grade >= 45) {
+        return 2.0;
+    } else if (grade >= 40) {
+        return 1.0;
+    } else {
+        return 0.0;
+    }
+}
 
-## Program Flow:
+int main() {
+    int numCourses;
+    printf("Enter the number of courses: ");
+    scanf("%d", &numCourses);
 
-- User Interaction:
-User is prompted to enter the number of courses.
-User enters the number of courses.
+    // Ensure a valid number of courses is entered
+    if (numCourses <= 0) {
+        printf("Error: Please enter a valid number of courses.\n");
+        return 1;  // Exit with an error code
+    }
 
-- Validation:
-The program checks if the entered number of courses is valid (greater than 0).
-If not, an error message is displayed, and the program exits with an error code.
+    double totalCredits = 0.0;
+    double totalGradePoints = 0.0;
 
-- Initialization:
-Variables totalCredits and totalGradePoints are initialized to 0.0.
+    for (int i = 1; i <= numCourses; ++i) {
+        double credits, grade;
+        printf("\nEnter details for Course %d:\n", i);
 
-- Loop for Each Course:
-The program enters a loop to gather information for each course.
+        // Get user input for course credits
+        printf("Enter credits for Course %d: ", i);
+        scanf("%lf", &credits);
 
-- User Interaction for Each Course:
-User is prompted to enter credits for the current course.
-User enters credits for the current course.
-User is prompted to enter the grade for the current course.
-User enters the grade for the current course.
+        // Get user input for course grade
+        printf("Enter grade for Course %d: ", i);
+        scanf("%lf", &grade);
 
-- Grade Validation:
-The program checks if the entered grade is within the valid range (0 to 4).
+        // Validate the grade entered
+        if (grade < 0 || grade > 100) {
+            printf("Error: Please enter a valid grade between 0 and 100.\n");
+            return 1;  // Exit with an error code
+        }
 
-If not, an error message is displayed, and the program exits with an error code.
+        // Calculate grade points based on the provided scale
+        double gradePoints = calculateGradePoints(grade);
 
-- Update Total Credits and Grade Points:
-The program updates the cumulative total credits and grade points for all courses.
+        // Update total credits and grade points
+        totalCredits += credits;
+        totalGradePoints += credits * gradePoints;
+    }
 
-- Calculate GPA:
-The program calculates the GPA based on the accumulated total credits and grade points.
+    // Calculate GPA
+    double gpa = totalGradePoints / totalCredits;
 
-- Display GPA:
-The program displays the calculated GPA.
+    // Display the GPA
+    printf("\nYour GPA is: %.2lf\n", gpa);
 
-- Exit Successfully:
-The program exits with a return code of 0, indicating successful execution.
-
-This program allows a user to input information for multiple courses and calculates the GPA based on the entered data.
+    return 0;  // Exit successfully
+}
+```
