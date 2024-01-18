@@ -1,0 +1,136 @@
+---
+sidebar_position: 4
+---
+
+# project 3
+
+## Algorithm
+
+- Get User Input:
+Display a menu for temperature conversion options.
+Prompt the user to choose between Celsius to Fahrenheit (1) or Fahrenheit to Celsius (2).
+
+Read the user's choice and store it in the variable choice.
+Prompt the user to enter the temperature for conversion.
+Read the user input for temperature and store it in the variable temperature.
+
+- Perform Temperature Conversion:
+Use a switch statement to check the user's choice and perform the corresponding temperature conversion.
+
+If the choice is 1, call the celsiusToFahrenheit function and display the result.
+
+If the choice is 2, call the fahrenheitToCelsius function and display the result.
+
+If the choice is neither 1 nor 2, display an error message and exit the program with an error code.
+
+- Display Result:
+Display the result of the temperature conversion with two decimal places.
+
+- Exit Successfully:
+Return 0 to indicate successful program execution.
+
+## Program Flow:
+
+- User Interaction:
+User is presented with a menu for temperature conversion options.
+
+User is prompted to choose between Celsius to Fahrenheit (1) or Fahrenheit to Celsius (2).
+
+User enters the choice.
+User is prompted to enter the temperature for conversion.
+User enters the temperature.
+
+- Temperature Conversion:
+The program uses a switch statement to identify the user's choice.
+
+If the choice is 1, the program calls the celsiusToFahrenheit function, passing the entered temperature, and displays the result.
+
+If the choice is 2, the program calls the fahrenheitToCelsius function, passing the entered temperature, and displays the result.
+
+If the choice is neither 1 nor 2, an error message is displayed, and the program exits with an error code.
+
+- Display Result:
+The program displays the result of the temperature conversion with two decimal places.
+
+- Exit Successfully:
+The program exits with a return code of 0, indicating successful execution.
+
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+<Tabs>
+<TabItem value="version1" label="version 1">
+
+```c
+function helloWorld() {
+  console.log('Hello, world!');
+}
+```
+
+</TabItem>
+<TabItem value="version2" label="version 2">
+
+```c
+#include <stdio.h>
+
+int main() {
+    double num1, num2, result;
+    char operator;
+
+    // Get user input
+    printf("Enter first number: ");
+    scanf("%lf", &num1);
+
+    printf("Enter operator (+, -, *, /): ");
+    scanf(" %c", &operator);  // Note the space before %c to consume any whitespace characters
+
+    printf("Enter second number: ");
+    scanf("%lf", &num2);
+
+    // Perform arithmetic operations
+    switch (operator) {
+        case '+':
+            result = num1 + num2;
+            break;
+        case '-':
+            result = num1 - num2;
+            break;
+        case '*':
+            result = num1 * num2;
+            break;
+        case '/':
+            if (num2 != 0) {
+                result = num1 / num2;
+            } else {
+                printf("Error: Division by zero is not allowed.\n");
+                return 1;  // Exit with an error code
+            }
+            break;
+        default:
+            printf("Error: Invalid operator.\n");
+            return 1;  // Exit with an error code
+    }
+
+    // Display the result
+    printf("Result: %.2lf %c %.2lf = %.2lf\n", num1, operator, num2, result);
+
+    return 0;  // Exit successfully
+}
+
+
+```
+
+</TabItem>
+<TabItem value="version3" label="version 3">
+
+```checks
+class HelloWorld {
+  public static void main(String args[]) {
+    System.out.println("Hello, World");
+  }
+}
+```
+
+</TabItem>
+</Tabs>

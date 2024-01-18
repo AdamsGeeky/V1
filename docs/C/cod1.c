@@ -1,43 +1,3 @@
----
-sidebar_position: 2
----
-
-# project 1 
-
-## Algorithm
-
-1. Start
-2. Input num1
-3. Input operator
-4. Input num2
-5. Switch on operator
-    - Case '+': result = num1 + num2
-    - Case '-': result = num1 - num2
-    - Case '*': result = num1 * num2
-    - Case '/':
-    - If num2 is not equal to 0, result = num1 / num2
-        - Else, print an error message and return 1
-        - Default: Print an error message and return 1
-6. Print the result: num1, operator, num2, result
-7. End
-
-## Flowchart
-
-```mermaid
-flowchart TD
-    A([Start]) --> B[/input num1 /]
-    B --> C[/ operations /]
-    C --> D[/ input num2 /]
-    D --> E{ +, -, *, / ?}
-    E --> G[ Sum ] --> J[/ Result /]
-    E --> F[ multiple ] --> J[/ Result /]
-    E --> H[ subtract ] --> J[/ Result /]
-    E --> I[ Divide ] --> J[/ Result /]
-    E -->|invalid| K([End])
-    J --> K
-```
-
-```c
 #include <stdio.h>
 
 int main() {
@@ -83,6 +43,3 @@ int main() {
 
     return 0;  // Exit successfully
 }
-```
-
-
