@@ -4,7 +4,53 @@ sidebar_position: 4
 
 # Assignments
 
-## project 1 
+# project 1 
+
+## Algorithm:
+- Get User Input:
+Display a prompt asking the user to enter the first number.
+Read the user input and store it in the variable num1.
+Display a prompt asking the user to enter an operator (+, -, *, /).
+Read the user input and store it in the variable operator with a space before %c to consume any whitespace characters.
+Display a prompt asking the user to enter the second number.
+Read the user input and store it in the variable num2.
+
+- Perform Arithmetic Operations:
+Use a switch statement to check the entered operator and perform the corresponding arithmetic operation.
+For addition (+), add num1 and num2.
+For subtraction (-), subtract num2 from num1.
+For multiplication (*), multiply num1 and num2.
+For division (/), check if num2 is not zero, then divide num1 by num2.
+If num2 is zero, display an error message, and exit the program with an error code.
+For an invalid operator, display an error message, and exit the program with an error code.
+Store the result in the variable result.
+
+- Display Result:
+Display the result of the arithmetic operation with two decimal places.
+
+- Exit Successfully:
+Return 0 to indicate successful program execution.
+
+## Program Flow
+- User Interaction
+User is prompted to enter the first number.
+User enters the first number.
+User is prompted to enter an operator (+, -, *, /).
+User enters the operator.
+User is prompted to enter the second number.
+User enters the second number.
+
+- Arithmetic Operations:
+The program uses a switch statement to identify the operator and perform the corresponding arithmetic operation.
+If the operator is invalid or division by zero is attempted, an error message is displayed, and the program exits with an error code.
+Otherwise, the result of the arithmetic operation is calculated and stored in the variable result.
+
+- Display Result:
+The program displays the result of the arithmetic operation with two decimal places.
+
+- Exit Successfully:
+The program exits with a return code of 0, indicating successful execution.
+This program allows the user to perform basic arithmetic operations on two numbers based on user input. It includes error checking for invalid operators and division by zero.
 
 ```c
 #include <stdio.h>
@@ -55,8 +101,86 @@ int main() {
 
 ```
 
-## project 2
+# project 2
 
+## Algorithm
+
+- step 1 Prompt User for Number of Courses:
+Display a prompt asking the user to enter the number of courses.
+Read the user input and store it in the variable numCourses.
+
+- step 2 Validate Number of Courses:
+Check if numCourses is less than or equal to 0.
+If true, display an error message and exit the program with an error code.
+
+- step 3 Initialize Variables:
+Initialize totalCredits and totalGradePoints to 0.0.
+
+- step 4  Loop for Each Course:
+Use a for loop to iterate from 1 to numCourses.
+
+- step 5 Inside the loop:
+Display a prompt for course details (course number).
+Read and store user input for course credits in the variable credits.
+Read and store user input for course grade in the variable grade.
+
+- step 6 Validate Grade:
+Check if grade is outside the valid range of 0 to 4 (on a 4.0 scale).
+If true, display an error message and exit the program with an error code.
+
+- step 7 Update Total Credits and Grade Points:
+Add credits to totalCredits.
+Add the product of credits and grade to totalGradePoints.
+
+- step 8  Calculate GPA:
+Calculate the GPA by dividing totalGradePoints by totalCredits. Store the result in the variable gpa.
+
+- step 9 Display GPA:
+Display the calculated GPA with two decimal places.
+
+- step 10 Exit Successfully:
+Return 0 to indicate successful program execution.
+
+## Program Flow:
+
+- User Interaction:
+User is prompted to enter the number of courses.
+User enters the number of courses.
+
+- Validation:
+The program checks if the entered number of courses is valid (greater than 0).
+If not, an error message is displayed, and the program exits with an error code.
+
+- Initialization:
+Variables totalCredits and totalGradePoints are initialized to 0.0.
+
+- Loop for Each Course:
+The program enters a loop to gather information for each course.
+
+- User Interaction for Each Course:
+User is prompted to enter credits for the current course.
+User enters credits for the current course.
+User is prompted to enter the grade for the current course.
+User enters the grade for the current course.
+
+- Grade Validation:
+The program checks if the entered grade is within the valid range (0 to 4).
+If not, an error message is displayed, and the program exits with an error code.
+
+- Update Total Credits and Grade Points:
+The program updates the cumulative total credits and grade points for all courses.
+
+- Calculate GPA:
+The program calculates the GPA based on the accumulated total credits and grade points.
+
+- Display GPA:
+The program displays the calculated GPA.
+
+- Exit Successfully:
+The program exits with a return code of 0, indicating successful execution.
+This program allows a user to input information for multiple courses and calculates the GPA based on the entered data.
+
+##  Code
 ```c
 #include <stdio.h>
 
@@ -125,10 +249,51 @@ double calculateGradePoints(double grade) {
         return 0.0;
     }
 }
-
 ```
 
-## project 3
+# project 3
+
+## Algorithm
+
+- Get User Input:
+Display a menu for temperature conversion options.
+Prompt the user to choose between Celsius to Fahrenheit (1) or Fahrenheit to Celsius (2).
+Read the user's choice and store it in the variable choice.
+Prompt the user to enter the temperature for conversion.
+Read the user input for temperature and store it in the variable temperature.
+
+- Perform Temperature Conversion:
+Use a switch statement to check the user's choice and perform the corresponding temperature conversion.
+If the choice is 1, call the celsiusToFahrenheit function and display the result.
+If the choice is 2, call the fahrenheitToCelsius function and display the result.
+If the choice is neither 1 nor 2, display an error message and exit the program with an error code.
+
+- Display Result:
+Display the result of the temperature conversion with two decimal places.
+
+- Exit Successfully:
+Return 0 to indicate successful program execution.
+
+## Program Flow:
+
+- User Interaction:
+User is presented with a menu for temperature conversion options.
+User is prompted to choose between Celsius to Fahrenheit (1) or Fahrenheit to Celsius (2).
+User enters the choice.
+User is prompted to enter the temperature for conversion.
+User enters the temperature.
+
+- Temperature Conversion:
+The program uses a switch statement to identify the user's choice.
+If the choice is 1, the program calls the celsiusToFahrenheit function, passing the entered temperature, and displays the result.
+If the choice is 2, the program calls the fahrenheitToCelsius function, passing the entered temperature, and displays the result.
+If the choice is neither 1 nor 2, an error message is displayed, and the program exits with an error code.
+
+- Display Result:
+The program displays the result of the temperature conversion with two decimal places.
+
+- Exit Successfully:
+The program exits with a return code of 0, indicating successful execution.
 
 ```c
 #include <stdio.h>
@@ -175,3 +340,5 @@ int main() {
 }
 
 ```
+
+
