@@ -189,11 +189,23 @@ const config = {
              position: 'left'
             
             },
-          {
-            href: 'https://github.com/AdamsGeeky',
-            label: 'GitHub',
-            position: 'right',
-          },
+            {
+              to: '/services',
+               label: 'Services',
+               position: 'left'
+              
+            },
+            {
+              to: '/services',
+               label: 'Contact Us',
+               position: 'right'
+              
+            },
+          // {
+          //   href: 'https://github.com/AdamsGeeky',
+          //   label: 'GitHub',
+          //   position: 'right',
+          // },
         ],
       },
       footer: {
@@ -239,7 +251,7 @@ const config = {
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} AdamsGeeky.`,
+        copyright: `Copyright © ${new Date().getFullYear()} Geekink.`,
       },
       prism: {
         theme: prismThemes.github,

@@ -3,6 +3,7 @@ import Link from '@docusaurus/Link';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import Layout from '@theme/Layout';
 import HomepageFeatures from '@site/src/components/HomepageFeatures';
+import Service from '@site/src/components/Service';
 
 import Heading from '@theme/Heading';
 import styles from './index.module.css';
@@ -12,11 +13,17 @@ function HomepageHeader() {
   return (
     <header className={clsx('hero hero--primary', styles.heroBanner)}>
         <div class="container">
-          {/* <h1 class="hero__title">{siteConfig.title}</h1> */}
-          <p class="hero__subtitle">{siteConfig.tagline}</p>
-          {/* <div>
-            <button class="button button--secondary button--lg">Get Started</button>
-          </div> */}
+          <h1 class="hero__title">{siteConfig.title}</h1>
+          <p class="hero__subtitle">
+          Bridging Tech Gaps in the North
+          </p>
+          <div>
+           <Link to={"/services"} className={clsx('item shadow--tl')}>
+           <button class="button button--secondary button--lg ">
+              Explore Our Services
+            </button> 
+           </Link>
+          </div>
         </div>
     </header>
   );
@@ -31,6 +38,7 @@ export default function Home() {
       <HomepageHeader />
       <main>
         <HomepageFeatures />
+        {/* <Service/> */}
       </main>
     </Layout>
   );

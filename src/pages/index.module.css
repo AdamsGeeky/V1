@@ -9,13 +9,13 @@
   text-align: center;
   position: relative;
   overflow: hidden;
-  background: url('/img/backgroud.jpg') no-repeat;
+  /* background: url('/img/backgroud.jpg') no-repeat; */
 }
 
 @media screen and (max-width: 996px) {
   .heroBanner {
-    /* padding: 2rem; */
-    background: url('/img/backgroud.jpg') no-repeat center;
+    padding: 2rem;
+    /* background: url('/img/backgroud.jpg') no-repeat center; */
     height: 80vh;
     width: 100%;
     background-size: cover;

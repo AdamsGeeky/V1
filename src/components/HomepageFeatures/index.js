@@ -1,7 +1,7 @@
 import clsx from 'clsx';
 import Heading from '@theme/Heading';
 import styles from './styles.module.css';
-
+import Service from '../Service';
 
 const FeatureList = [
   {
@@ -59,6 +59,7 @@ export default function HomepageFeatures() {
             <Feature key={idx} {...props} />
           ))}
         </div>
+        {/* <Service/> */}
       </div>
     </section>
   );
