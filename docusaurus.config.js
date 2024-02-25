@@ -178,10 +178,47 @@ const config = {
         },
         items: [
           {
-            type: 'docSidebar',
-            sidebarId: 'tutorialSidebar',
+            // type: 'docSidebar',
+            type: 'dropdown',
             position: 'left',
-            label: 'Contents',
+            label: 'Courses',
+            items: [
+              {
+                type: 'doc',
+                label: 'General Computing Basic',
+                docId: 'basic/intro',
+              },
+              {
+                type: 'doc',
+                label: 'Advance Excel',
+                docId: 'excel/intro',
+              },
+              {
+                type: 'doc',
+                label: 'Python programming',
+                docId: 'python/intro',
+              },
+              {
+                type: 'doc',
+                label: 'Mern Stack',
+                docId: 'mern/intro',
+              },
+              {
+                type: 'doc',
+                label: 'NodeJS',
+                docId: 'node/intro',
+              },
+              {
+                type: 'doc',
+                label: 'ReactJS',
+                docId: 'react/intro',
+              },
+              {
+                type: 'doc',
+                label: 'Java programming',
+                docId: 'java/intro',
+              },
+            ],
           },
           {
             to: '/blog',
@@ -215,7 +252,7 @@ const config = {
             title: 'Docs',
             items: [
               {
-                label: 'Contents',
+                label: 'Courses',
                 to: '/docs/intro',
               },
             ],
@@ -251,6 +288,12 @@ const config = {
             ],
           },
         ],
+        logo: {
+          alt: 'Geek ink Logo',
+          src: '/img/logo.png',
+          href: 'https://geekink.me/',
+      
+        },
         copyright: `Copyright © ${new Date().getFullYear()} Geekink.`,
       },
       prism: {
