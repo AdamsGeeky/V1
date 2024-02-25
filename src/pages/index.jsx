@@ -2,12 +2,11 @@ import clsx from 'clsx';
 import Link from '@docusaurus/Link';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import Layout from '@theme/Layout';
+
 import HomepageFeatures from '@site/src/components/HomepageFeatures';
-import Mentors from '../components/Mentors';
 import Partners from '../components/Partners'
 import Courses from '../components/Courses';
 import styles from './index.module.css';
-import logo from '@site/static/img/logo.png'
 function HomepageHeader() {
   const {siteConfig} = useDocusaurusContext();
   return (
@@ -32,8 +31,9 @@ function HomepageHeader() {
 
 export default function Home() {
   const {siteConfig} = useDocusaurusContext();
+
   return (
-    <Layout
+    <Layout 
       title={`home`}
       description="Geek ink is a collection of resources for Skill first Programmers to learn Why, How, and What <head />">
       <HomepageHeader />
