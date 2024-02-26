@@ -62,4 +62,9 @@ all these would not be possible without strong hard skills of computer science s
 - Attention to details
 
 # Soft skills
+
+
+![](../img/works.jpeg)
+
+
 **Soft skills** are skills applicable to all professions.Skills like communication, collaboration, adaptability, and problem-solving – commonly called “soft” skills – are now so essential to success in IT, The ability to think creatively and solve problems by working with others is really important,
