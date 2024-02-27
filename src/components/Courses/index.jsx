@@ -3,36 +3,36 @@ import Link from '@docusaurus/Link'
 import styles from './styles.module.css'
 
 const CourseList = [
-    {
-        pic: require('@site/static/img/advanceExcel.jpg').default,
-        url: '/docs/excel/intro',
-        title: 'Advance Excel'
-    },
+    // {
+    //     pic: require('@site/static/img/advanceExcel.jpg').default,
+    //     url: '/docs/excel/intro',
+    //     title: 'Advance Excel'
+    // },
     {
         pic: require('@site/static/img/python.png').default,
         url: '/docs/python/intro',
         title: 'Python'
     },
-    {
-        pic: require('@site/static/img/stack.png').default,
-        url: '/docs/mern/intro',
-        title: 'Mern Stack'
-    },
-    {
-        pic: require('@site/static/img/nodejs.png').default,
-        url: '/docs/node/intro',
-        title: 'NodeJS'
-    },
-    {
-        pic: require('@site/static/img/reactjs.png').default,
-        url: '/docs/react/intro',
-        title: 'ReactJS'
-    },
-    {
-        pic: require('@site/static/img/java.jpg').default,
-        url: '/docs/java/intro',
-        title: 'Java'
-    },
+    // {
+    //     pic: require('@site/static/img/stack.png').default,
+    //     url: '/docs/mern/intro',
+    //     title: 'Mern Stack'
+    // },
+    // {
+    //     pic: require('@site/static/img/nodejs.png').default,
+    //     url: '/docs/node/intro',
+    //     title: 'NodeJS'
+    // },
+    // {
+    //     pic: require('@site/static/img/reactjs.png').default,
+    //     url: '/docs/react/intro',
+    //     title: 'ReactJS'
+    // },
+    // {
+    //     pic: require('@site/static/img/java.jpg').default,
+    //     url: '/docs/java/intro',
+    //     title: 'Java'
+    // },
     
 ]
 
