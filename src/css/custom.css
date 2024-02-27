@@ -28,3 +28,21 @@
   --ifm-color-primary-lightest: #4fddbf;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
 }
+
+body{
+  font-family: 'Poppins', sans-serif;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+image{
+  max-width: 100%;
+  height: auto;
+  border-radius: 10%;
+}
+.custom-divider {
+  width: 70%;
+  height: 2px;
+  border: none;
+  background-color: #2e8555;
+  margin: 20px auto;
+}
