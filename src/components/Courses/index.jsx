@@ -10,7 +10,7 @@ const CourseList = [
     // },
     {
         pic: require('@site/static/img/python.png').default,
-        url: '/docs/python/intro',
+        url: '/docs/python',
         title: 'Python'
     },
     // {

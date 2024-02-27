@@ -17,7 +17,7 @@ function HomepageHeader() {
           we believe in the transformative power of technology 
           </p>
           <div>
-           <Link to={"/docs/intro"} className={clsx('item shadow--tl')}>
+           <Link to={"/docs/python"} className={clsx('item shadow--tl')}>
            <button class="button button--secondary button--lg ">
               Explore Our Courses
             </button> 
