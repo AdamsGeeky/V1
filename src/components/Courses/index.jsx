@@ -3,11 +3,16 @@ import Link from '@docusaurus/Link'
 import styles from './styles.module.css'
 
 const CourseList = [
-    // {
-    //     pic: require('@site/static/img/advanceExcel.jpg').default,
-    //     url: '/docs/excel/intro',
-    //     title: 'Advance Excel'
-    // },
+    {
+        pic: require('@site/static/img/basic.jpeg').default,
+        url: '/docs/basic/',
+        title: 'Basic Computing'
+    },
+    {
+        pic: require('@site/static/img/advanceExcel.jpg').default,
+        url: '/docs/excel',
+        title: 'Advance Excel'
+    },
     {
         pic: require('@site/static/img/python.png').default,
         url: '/docs/python',

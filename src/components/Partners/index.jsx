@@ -10,8 +10,11 @@ const PartnersList = [
     {
         pic: require('@site/static/img/opls.png').default,
         url: 'https://github.com/open-source-learners'
+    },
+    {
+        pic: require('@site/static/img/gdg.png').default,
+        url: 'https://gdg.community.dev/gdg-gombe/'
     }
-    
 ]
 
 function Partner({pic, url}) {

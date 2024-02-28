@@ -188,11 +188,11 @@ const config = {
                 label: 'General Computing Basic',
                 docId: 'basic/intro',
               },
-              // {
-              //   type: 'doc',
-              //   label: 'Advance Excel',
-              //   docId: 'excel/intro',
-              // },
+              {
+                type: 'doc',
+                label: 'Advance Excel',
+                docId: 'excel/intro',
+              },
               {
                 type: 'doc',
                 label: 'Python programming',
