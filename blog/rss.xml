@@ -4,7 +4,7 @@
         <title>Geek ink Blog</title>
         <link>https://geekink.me/blog</link>
         <description>Geek ink Blog</description>
-        <lastBuildDate>Wed, 28 Feb 2024 20:35:29 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 28 Feb 2024 23:37:49 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
@@ -12,7 +12,7 @@
             <title><![CDATA[General introduction]]></title>
             <link>https://geekink.me/blog/programming</link>
             <guid>https://geekink.me/blog/programming</guid>
-            <pubDate>Wed, 28 Feb 2024 20:35:29 GMT</pubDate>
+            <pubDate>Wed, 28 Feb 2024 23:37:49 GMT</pubDate>
             <description><![CDATA[Welcome to the fascinating world of programming!]]></description>
             <content:encoded><![CDATA[<p><img loading="lazy" src="https://geekink.me/assets/images/cover-594f5e5d08ba07ef19084cef6939437a.JPG" width="911" height="607" class="img_ev3q"></p>
 <blockquote>
@@ -76,7 +76,7 @@ Coding is the act of writing and implementing source code. It's one aspect of pr
             <title><![CDATA[Who is An Engineer]]></title>
             <link>https://geekink.me/blog/welcome</link>
             <guid>https://geekink.me/blog/welcome</guid>
-            <pubDate>Wed, 28 Feb 2024 20:35:29 GMT</pubDate>
+            <pubDate>Wed, 28 Feb 2024 23:37:49 GMT</pubDate>
             <description><![CDATA[An Engineer is someone who went to know how and why things work, beside been naturally curious, An Engineer A Person who Designs and Builds things to solve a specific problems]]></description>
             <content:encoded><![CDATA[<p><img loading="lazy" src="https://geekink.me/assets/images/engineer-2f4842549e7ce1ddbcb5eef193ea26db.png" width="440" height="545" class="img_ev3q"></p>
 <p>An <strong>Engineer</strong> is someone who went to know <strong>how</strong> and <strong>why</strong> things work, beside been naturally curious, An <strong>Engineer</strong> A Person who Designs and Builds things to solve a specific problems</p>

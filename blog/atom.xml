@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://geekink.me/blog</id>
     <title>Geek ink Blog</title>
-    <updated>2024-02-28T20:35:29.000Z</updated>
+    <updated>2024-02-28T23:37:49.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://geekink.me/blog"/>
     <subtitle>Geek ink Blog</subtitle>
@@ -11,7 +11,7 @@
         <title type="html"><![CDATA[General introduction]]></title>
         <id>https://geekink.me/blog/programming</id>
         <link href="https://geekink.me/blog/programming"/>
-        <updated>2024-02-28T20:35:29.000Z</updated>
+        <updated>2024-02-28T23:37:49.000Z</updated>
         <summary type="html"><![CDATA[Welcome to the fascinating world of programming!]]></summary>
         <content type="html"><![CDATA[<p><img loading="lazy" src="https://geekink.me/assets/images/cover-594f5e5d08ba07ef19084cef6939437a.JPG" width="911" height="607" class="img_ev3q"></p>
 <blockquote>
@@ -79,7 +79,7 @@ Coding is the act of writing and implementing source code. It's one aspect of pr
         <title type="html"><![CDATA[Who is An Engineer]]></title>
         <id>https://geekink.me/blog/welcome</id>
         <link href="https://geekink.me/blog/welcome"/>
-        <updated>2024-02-28T20:35:29.000Z</updated>
+        <updated>2024-02-28T23:37:49.000Z</updated>
         <summary type="html"><![CDATA[An Engineer is someone who went to know how and why things work, beside been naturally curious, An Engineer A Person who Designs and Builds things to solve a specific problems]]></summary>
         <content type="html"><![CDATA[<p><img loading="lazy" src="https://geekink.me/assets/images/engineer-2f4842549e7ce1ddbcb5eef193ea26db.png" width="440" height="545" class="img_ev3q"></p>
 <p>An <strong>Engineer</strong> is someone who went to know <strong>how</strong> and <strong>why</strong> things work, beside been naturally curious, An <strong>Engineer</strong> A Person who Designs and Builds things to solve a specific problems</p>
