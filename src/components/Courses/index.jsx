@@ -93,9 +93,7 @@ export default function Courses() {
             width: { sm: '100%', md: '60%' },
             textAlign: { sm: 'left', md: 'center' },
             }}>
-            Explore why our product stands out: adaptability, durability,
-            user-friendly design, and innovation. Enjoy reliable customer support and
-            precision in every detail.
+           Are you ready to not just learn but be mentored by the best? GeekInk proudly introduces a stellar lineup of courses meticulously crafted by industry leaders and open-source advocates. Get ready to be guided by the experts who have shaped the tech landscape and are eager to share their invaluable insights with you!
           </Typography>
                <Box
                sx={{

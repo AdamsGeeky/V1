@@ -6,6 +6,7 @@ import Layout from '@theme/Layout';
 import HomepageFeatures from '@site/src/components/HomepageFeatures';
 import Partners from '../components/Partners'
 import Courses from '../components/Courses';
+import FAQ from '../components/Why';
 import styles from './index.module.css';
 function HomepageHeader() {
   const {siteConfig} = useDocusaurusContext();
@@ -17,7 +18,7 @@ function HomepageHeader() {
           we believe in the transformative power of technology 
           </p>
           <div>
-           <Link to={"/docs/python"} className={clsx('item shadow--tl')}>
+           <Link to={"/docs/intro"} className={clsx('item shadow--tl')}>
            <button class="button button--secondary button--lg ">
               Explore Our Courses
             </button> 
@@ -40,6 +41,7 @@ export default function Home() {
       <main>
         <HomepageFeatures />
         <Courses/>
+        <FAQ/>
         <Partners/>
       </main>
     </Layout>
